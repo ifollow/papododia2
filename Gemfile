@@ -32,8 +32,21 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'mysql2'
 
+
+gem 'capistrano'
+
+gem 'unicorn'
+
+group :development do
+
+	gem 'better_errors'
+	gem "binding_of_caller"
+	gem 'capistrano-unicorn', :require => false
+
+end
+
+gem 'rvm-capistrano'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
