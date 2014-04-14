@@ -1,0 +1,15 @@
+@media (max-width: 1023px) {
+	.work-post, .pagination {
+		width:100%;
+	}
+	.entry-header h2 { font-size:36px; line-height:40px; }
+	.preview-img { overflow:hidden; }
+}
+@media (max-width: 468px) {
+	.entry-header span { display:none; }
+	.entry-header h2 { font-size:18px; line-height:24px;margin-left: 20px; margin-right: 20px;}
+	.format-image .entry-header { bottom:10px; }
+	.work-content h3.heading-work { font-size:18px; line-height:30px; }
+	.work-content {padding: 20px 20px 60px 20px; }
+	.big-header { font-size:20px; margin-left:20px; }
+}
