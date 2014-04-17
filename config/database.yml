@@ -19,8 +19,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/novatabeleprod.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: pp
   pool: 5
-  timeout: 5000
-
+  username: root
+  password: rub32912289
+  #socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
