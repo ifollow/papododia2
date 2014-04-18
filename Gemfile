@@ -44,13 +44,7 @@ end
 
 gem 'rvm-capistrano'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
-
-gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
-
-gem 'ransack',     github: 'activerecord-hackery/ransack'
-
-gem 'formtastic',  github: 'justinfrench/formtastic'
+gem "typus", :git => "git://github.com/fesplugas/typus.git", :branch => "4-0-stable"
 
 gem 'carrierwave'
 
