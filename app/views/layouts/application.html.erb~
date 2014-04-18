@@ -8,15 +8,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!--[if !IE]><!--><div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script>if (/*@cc_on!@*/false) { document.documentElement.className+=' lt-ie10'; }</script><!--<![endif]--> 
+	<!--[if !IE]><!-->
+<div class="fit-vids-style" id="fit-vids-style" style="display: none;">
 
-    <link rel="stylesheet" id="framework-css" href="css/framework.css" type="text/css" media="all">
-    <link rel="stylesheet" id="main-css" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="mobile-css" href="css/mobile.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/tipTip.css">
+­<style>
+.fluid-width-video-wrapper{
+width:100%;
+position:relative;
+padding:0;
+}
+.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+</style>
+</div>
+<script>
+if (/*@cc_on!@*/false) {
+ document.documentElement.className+=' lt-ie10'; 
+}</script>
+<!--<![endif]--> 
+       <%= javascript_include_tag "application" %>
+    <link rel="stylesheet" id="framework-css" href="/css/framework.css" type="text/css" media="all">
+    <link rel="stylesheet" id="main-css" href="/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="mobile-css" href="/css/mobile.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tipTip.css">
     
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate.min.js"></script>
 
 
 
@@ -25,5 +47,6 @@
 <body>
 	
 <%= yield %>
-
-</body></html>
+<%= render 'shared/javascripts' %>
+</body>
+</html>

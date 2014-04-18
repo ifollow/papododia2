@@ -1,0 +1,38 @@
+		    	<script type="text/javascript">
+		    	
+		    	jQuery(document).ready(function($) {
+		    	
+		    		//HOVERDIV ONLY NORMAL SCREENS
+		    		(function($) {
+		    		    var $window = $(window),
+		    		        $html = $('body');
+		    		    function resize() {
+		    		        if ($window.width() > 768) {
+		    		            return $html.addClass('hoverdiv-active');
+		    		        }
+		    		        $html.removeClass('hoverdiv-active');
+		    		        $html.addClass('no-hoverdiv-active');
+		    		    }
+		    		    $window
+		    		        .resize(resize)
+		    		        .trigger('resize');
+		    		})(jQuery);
+		    		
+		    		//HOVERDIV
+		    		$(window).bind("load", function() {
+		    		   $(' .hoverdiv-active #isotope-container > li ').each( function() { $(this).hoverdir(); } );
+		    		});
+		    	}); 
+		    	</script>
+
+<link rel="stylesheet" id="open-house-styles-css" href="/css/open-house-style.css" type="text/css" media="all">
+
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/custom-libraries.js"></script>
+<script type="text/javascript" src="js/isotope.js"></script>
+<script type="text/javascript" src="js/jquery.tipTip.minified.js"></script>
+<script type="text/javascript" src="js/hoverdir.js"></script>
+
