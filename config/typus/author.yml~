@@ -2,7 +2,7 @@
 
 Author:
   fields:
-    default: name
+    default: to_label
     form: 
   relationships: 
   application: Application

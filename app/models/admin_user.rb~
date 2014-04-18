@@ -1,5 +1,5 @@
 class AdminUser < ActiveRecord::Base
 
-  has_admin
+  #has_admin
 
 end
