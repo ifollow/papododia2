@@ -11,8 +11,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
   
-   @posts = Post.where("category_id =?", params[:id]) 
-   @categories = Category.all
+   @posts = Post.where("category_id =?", params[:id])  
   
   end
 

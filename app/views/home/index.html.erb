@@ -36,7 +36,8 @@
           
         </ul>
         </span><!-- END .overlay-meta-wrapper -->
-        <a href="full_work.html" class="hover-on">
+	<%= link_to(post, :class => 'hover-on') do %>
+        
             <div class="hoverdiv-feat hide-for-small">
 	     <%= image_tag(post.image_url(:giga)) %>
          		
@@ -45,7 +46,8 @@
             <div class="overlay hover-on">
                 <h4><%= post.title %> <span><%= post.category.name %></span></h4>
             </div><!-- END .overlay -->
-        </a>
+      
+	<% end %>
     </li><!-- END .isotope-item -->
 <% end %>
 <!-- fim do render de cada post --> 
@@ -73,7 +75,7 @@
             <div class="textwidget">
             	<ul class="menu">
 		<% @categories.each do |category| %>
-		<li> <%= link_to "#{category.name}" %> </li>
+		<li> <%= link_to "#{category.name}", category %> </li>
 
 	        <% end %>
                    

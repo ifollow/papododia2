@@ -31,13 +31,17 @@
     <%= f.label :image %><br>
     <%= f.file_field :image %>
   </div>
+<div class="field">
+    <%= f.label :image2 %><br>
+    <%= f.file_field :image2 %>
+  </div>
   <div class="field">
     <%= f.label :author_id %><br>
     <%= collection_select(:post, :author_id, Author.all, :id, :name, prompt: 'selecione o Autor') %>
   </div>
   <div class="field">
     <%= f.label :category_id %><br>
-    <%= f.text_field :category_id %>
+   <%= collection_select(:post, :category_id, Category.all, :id, :name, prompt: 'selecione a Categoria') %>
   </div>
   <div class="actions">
     <%= f.submit %>

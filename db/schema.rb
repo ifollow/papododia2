@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140418024156) do
+ActiveRecord::Schema.define(version: 20140420083715) do
 
   create_table "admin_users", force: true do |t|
     t.string   "first_name",       default: "",    null: false
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 20140418024156) do
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image2"
+    t.text     "content2"
   end
 
   add_index "posts", ["author_id"], name: "index_posts_on_author_id", using: :btree
