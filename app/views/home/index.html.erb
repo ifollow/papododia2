@@ -7,7 +7,7 @@
 		       
                         <li><a href="#" data-filter="isotope-item" class="tiptip " title="Todos"></a></li>
 			<% @categories.each do |category| %>
-			<li><%= link_to "", category, {:'data-filter' => category.name, :'title' => category.name } %></li>
+			<li><%= link_to "#{category.name}", category, {:'data-filter' => category.name, :'title' => category.name } %></li>
 			<% end %>
                       
                     </ul>

@@ -44,6 +44,7 @@
                 <p><%= @post.content2 %></p>
             </div>
             <div class="clearfix"></div>
+            <div class="fb-comments" data-href="<%= request.original_url %>" data-width="800" data-numposts="20" data-colorscheme="light"></div>
             <div class="tags">
 <a href="#" rel="tag"><%= @post.category.name %></a> 
             </div>
@@ -55,7 +56,7 @@
                      
                     </div>
                 </span>
-                <a href="#" class="post-like post-like " title="You already like this"><div class="post-like-info">0</div></a>
+                <a href="#" class="post-like post-like " title="Gostam desta postagem"><div class="post-like-info">0</div></a>
             </div>
             <div class="clearfix"></div>
             

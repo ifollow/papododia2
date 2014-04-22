@@ -9,11 +9,11 @@ load "config/recipes/unicorn"
 
 set :application, "papododia"
 server "107.170.13.16", :web, :app, :db, primary: true
-set :keep_releases, 2
+set :keep_releases, 1
 set :scm, :git
-set :repository, 'git@github.com:ifollow/papododia.git'
+set :repository, 'git@github.com:ifollow/papododia2.git'
 set :branch, 'master'
-set :deploy_via, :remote_cache
+set :deploy_via, :copy
 set :deploy_to, '/var/www/papododia'
 set :current, "#{deploy_to}/current"
 set :user, "root"
